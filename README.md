@@ -24,3 +24,13 @@ public class Post
         public string Body { get; set; }
     }
 ```
+
+&nbsp;
+## 03 Add the BlogDbContext
+* While `using System.Data.Entity`, add a class that derives from DbContext and inside this, expose one or more DbSets.
+```
+public class BlogDbContext : DbContext
+    {
+        public DbSet<Post> Posts { get; set; }
+    }
+```
