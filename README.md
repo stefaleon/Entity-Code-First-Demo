@@ -34,3 +34,12 @@ public class BlogDbContext : DbContext
         public DbSet<Post> Posts { get; set; }
     }
 ```
+
+&nbsp;
+## 04 Specify a connectionString to the database
+* In App.config, add the appropriate connectionString.
+```
+<connectionStrings>
+    <add name="BlogDbContext" connectionString="data source=.\SQLEXPRESS; initial catalog=CodeFirstDemo; integrated security=SSPI" providerName="System.Data.SqlClient"/>
+  </connectionStrings>
+ ```
