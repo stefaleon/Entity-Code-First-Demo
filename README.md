@@ -43,3 +43,11 @@ public class BlogDbContext : DbContext
     <add name="BlogDbContext" connectionString="data source=.\SQLEXPRESS; initial catalog=CodeFirstDemo; integrated security=SSPI" providerName="System.Data.SqlClient"/>
   </connectionStrings>
  ```
+
+ &nbsp;
+ ## 05 Enable Code First Migrations
+ * In Package Manager Console, enable migrations for this project.
+ ```
+ PM> enable-migrations
+ ```
+ 
