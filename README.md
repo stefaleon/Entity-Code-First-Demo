@@ -50,4 +50,10 @@ public class BlogDbContext : DbContext
  ```
  PM> enable-migrations
  ```
- 
+
+ &nbsp;
+ ## 06 Add the CreatePost migration  
+ * Every time we make a change to our model we need to create a migration. We have created the Posts class so we will add the CreatePost migration in order to represent the change we have made.
+ ```
+ add-migration CreatePost
+ ```
