@@ -44,16 +44,24 @@ public class BlogDbContext : DbContext
   </connectionStrings>
  ```
 
- &nbsp;
- ## 05 Enable Code First Migrations
- * In Package Manager Console, enable migrations for this project.
- ```
- PM> enable-migrations
- ```
+&nbsp;
+## 05 Enable Code First Migrations
+* In Package Manager Console, enable migrations for this project.
+```
+PM> enable-migrations
+```
 
- &nbsp;
- ## 06 Add the CreatePost migration  
- * Every time we make a change to our model we need to create a migration. We have created the Posts class so we will add the CreatePost migration in order to represent the change we have made.
- ```
- add-migration CreatePost
- ```
+&nbsp;
+## 06 Add the CreatePost migration  
+* Every time we make a change to our model we need to create a migration. We have created the Posts class so we will add the CreatePost migration in order to represent the change we have made.
+```
+PM> add-migration CreatePost
+```
+
+
+&nbsp;
+## 07 Run the migration
+* By running the migrations the database gets updated.
+```
+PM> Update-Database
+```
